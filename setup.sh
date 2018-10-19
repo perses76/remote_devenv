@@ -1,12 +1,11 @@
 #!/bin/bash
 
-pacman -Sy
-pacman -S git python nginx-mainline python-pip cmake
-pacman -Syu
+pacman -Suy
+pacman -Suy git python nginx-mainline python-pip cmake
 
-cp ~/devenv/vim ~/.vim
+ln -s $HOME/devenv/vim $HOME/.vim
 
-rm /etc/ngnix/nginx.conf
-ln -s HOME$/devenv/nginx/ngnix.conf /etc/ngnix/nginx.conf
+rm /etc/nginx/nginx.conf
+ln -s $HOME/devenv/nginx/nginx.conf /etc/nginx/nginx.conf
 
 # Attention: cmake is required to compile vim YCM plugin. You can uninstall it after VIM installed.

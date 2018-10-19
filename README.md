@@ -12,6 +12,17 @@ Instructions how to set up, organize and work with working invironment on remote
 Search for *arch-linux* in Community AIM.
 Install the last version of *arch-linux*
 
+
+## Install git
+
+Run:
+
+```
+pacman -Sy
+pacman -Suy
+pacman -S git
+```
+
 ## Copy ssh keys and config files
 
 Copy shh keys to access GitHub and/or Bitbucket or anything else.
@@ -28,6 +39,14 @@ where:
 * **~/.ssh/vadim-aws-personal** - private ssh key for server access
 * **~/.ssh/devenv.pub** - public ssh key to access GitHub and BitBuket
 * **~/.ssh/devenv** - private ssh key to access GitHub and BitBuket
+
+
+Change permissions of ssh keys:
+
+```
+chmod 700 /root/.ssh
+chmod 400 /root/.ssh/*
+```
 
 ## Clone DevelopmentEnviroment project locally
 

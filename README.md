@@ -18,8 +18,8 @@ Install the last version of *arch-linux*
 Run:
 
 ```
-pacman -Sy
 pacman -Suy
+reboot
 pacman -S git
 ```
 

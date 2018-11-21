@@ -5,10 +5,12 @@
 * Search for *arch-linux* in Community AIM.
 * Install the last version of *arch-linux*
 
-## Update package manager repositories
+## Update package manager repositories and install required packages.
 
 ```
 pacman -Suy
+reboot
+pacman -S git
 ```
 
 

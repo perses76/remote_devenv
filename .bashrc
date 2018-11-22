@@ -1,0 +1,2 @@
+MMR_SETTINGS=mmr.settings.TestSettings
+MMR__PG__SQLALCHEMY_DATABASE_URI=postgresql://localhost/postgres

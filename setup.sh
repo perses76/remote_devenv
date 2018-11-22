@@ -4,7 +4,7 @@ pacman -Suy
 pacman -Suy git python nginx-mainline python-pip cmake
 
 ln -s $HOME/devenv/vim $HOME/.vim
-ln -s $HOME/devenv/.bashrc $HOME/.bashrc
+ln -s $HOME/devenv/.profile $HOME/.profile
 
 rm /etc/nginx/nginx.conf
 ln -s $HOME/devenv/nginx/nginx.conf /etc/nginx/nginx.conf

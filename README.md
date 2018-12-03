@@ -7,6 +7,50 @@ Instructions how to set up, organize and work with working invironment on remote
 * Editor: Vim (from Arch-Linux)
 
 
+## Organization.
+
+    * DevEnv (current project)
+        * Vim
+        * Profile
+        * supervisor
+    * Project Personal Settings
+        * Vim project settings.
+        * usefull commands
+        * environment variables.
+    * Project 
+        * Source code.
+        * settings.
+
+## Users, Groups, Roles, Policies
+### Users
+
+* AWS root - only console access with 2FA.
+* vadim - policy: **Vadim_Developer**, groups: **Developers**, ssh key: *devenv*
+
+### Roles
+
+VadimDevInstance - roles assgined to EC2 instances where I work for customer projects
+
+
+### Policies
+
+* Vadim_Developer - S3 - Full, EC2 - start/stop, CodeCommit - Full
+* VadimSecretKeys - S3 - vo-secred full access. - Make it realonly
+
+
+
+
+## S3 Folders
+
+     /vo-secrets - folder with  full access only for root. policy VadimSecretKeys - has readonly access 
+     . ALL MY PRIVATE KEYS FOR ALL PROJECTS.
+
+         /personal - my personal keys. (ssh: devenv and devenv.pub)
+         /proj1 - secret keys for specific project.
+
+
+
+
 ## Install OS on AWS
 
 Search for *arch-linux* in Community AIM.
